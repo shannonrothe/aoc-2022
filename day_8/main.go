@@ -85,7 +85,7 @@ func part1(lines []string) int {
 
 	for y := 1; y < len(lines)-1; y++ {
 		for x := 1; x < len(lines[y])-1; x++ {
-			n := height(lines[x][y])
+			n := height(lines[y][x])
 
 			u := up(lines, x, y)
 			uv := visible(n, u)
